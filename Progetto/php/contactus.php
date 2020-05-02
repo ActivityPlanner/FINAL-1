@@ -14,11 +14,11 @@
       da chi si riceve il feedback, testo del messaggio*/
       $mailTo = "activityplanner2@gmail.com";
       $headers = "From: ".$email;
-      $txt = 'Hai ricevuto un\'e-mail da '.$nome.'.\n\n'.$messaggio;
-
+      $txt = "Hai ricevuto un'e-mail da ".$nome.".\n\n".$messaggio;
+     
       //effettua l'invio dell'email di feedback
       mail($mailTo, $oggetto, $txt, $headers);
-      //rimani nella pagina conttattaci
+      //rimani nella pagina contattaci
       header('location: ../html/contactsPage.html');
   }
 
