@@ -35,7 +35,7 @@
         $insert = "insert into users (id, username, email, password) value ('0', '$username', '$email', '$pass')";
         mysqli_query($con, $insert);
         //torna alla pagina di login
-        header('location: ../../index.php');
+        header('location: ../html/loginPage.html');
       }
 
       //verifica se è stato effettuato un inserimento nel db
