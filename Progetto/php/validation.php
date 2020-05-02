@@ -34,7 +34,7 @@
         header('location: ../html/mainPage.html');
       }else{
       	//in caso contrario si rimane all'interno della pagina di login
-        header('location: ../../index.php');
+        header('location: ../html/loginPage.html');
       }
     }
 ?>
