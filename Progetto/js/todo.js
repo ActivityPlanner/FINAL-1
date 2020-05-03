@@ -49,7 +49,12 @@ clear.addEventListener("click", function() {
 });
 
 // Mostra la data di oggi
-const options = { weekday: "short", month: "long", day: "numeric" };
+const options = { 
+    weekday: "short", 
+    month: "long", 
+    day: "numeric" 
+};
+
 const today = new Date();
 
 
@@ -59,8 +64,9 @@ dateElement.innerHTML = today.toLocaleDateString("it-IT", options);
 //aggiungi attività alla lista
 function addToDo(toDo, id, done, trash) {
 
-    if (trash) { return; }
-
+    if (trash) { 
+        return; 
+    }
 
     const DONE = done ? CHECK : UNCHECK; //se l'attività è completata si aggiunge la spunta
     const LINE = done ? LINE_THROUGH : ""; //se l'attività è completata viene sbarrata
