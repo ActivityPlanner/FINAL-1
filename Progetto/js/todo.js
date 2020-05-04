@@ -157,7 +157,7 @@ function completeToDo(element) {
 
     element.classList.toggle(CHECK); //se il check è stato fatto allora rimuovilo
     element.classList.toggle(UNCHECK);//se l'uncheck è impostato allora rimuovilo
-    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);//seleziona il testo dell'attività e a questa aggiunge una linea orizzontale
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);//seleziona il testo dell'attività e su questa aggiunge una linea orizzontale
 
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
