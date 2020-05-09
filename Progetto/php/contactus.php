@@ -1,6 +1,6 @@
 <?php
 
-   //verifica se il bottone "login" sia stato effettivamente premuto
+   //verifica se il bottone "invia feedback" sia stato effettivamente premuto
   if(isset($_POST['submit'])){
 
       /*acquisisce tramite metodo POST (non in chiaro) le informazioni inserite 
@@ -10,7 +10,7 @@
       $email = $_POST['email'];
       $messaggio = $_POST['messaggio'];
 
-      /*variabili dove si salvano i dati: email del destinatario (Sctivity Planner), 
+      /*variabili dove si salvano i dati: email del destinatario (Activity Planner), 
       da chi si riceve il feedback, testo del messaggio*/
       $mailTo = "activityplanner2@gmail.com";
       $headers = "From: ".$email;
