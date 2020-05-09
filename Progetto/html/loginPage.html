@@ -5,8 +5,8 @@
     <title>Login</title>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="Progetto/css/style.css">
-    <link rel="stylesheet" type="text/css" href="Progetto/css/media.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
@@ -104,12 +104,12 @@
                     <button type="button" class="toggle-button" onclick="login()">Log in</button>
                     <button type="button" class="toggle-button" onclick="register()">Registrati</button>
                 </div>
-                <form id="login" class="input-group" action="Progetto/php/validation.php" method="post">
+                <form id="login" class="input-group" action="../php/validation.php" method="post">
                     <input type="text" class="input-field" placeholder="Nome utente" name="username" required>
                     <input type="password" class="input-field" placeholder="Password" name="password" required>
                     <button type="submit" class="submit-btn" name="login">Continua</button>
                 </form>
-                <form id="register" class="input-group" action="Progetto/php/registration.php" method="post">
+                <form id="register" class="input-group" action="../php/registration.php" method="post">
                 	<input type="text" class="input-field" placeholder="Nome utente" name="username" required>
                     <input type="email" class="input-field" placeholder="Email" name="email" required>
                     <input type="password" class="input-field" placeholder="Password" name="password" required>
@@ -180,8 +180,8 @@
     </footer>
 
     <!-- riferimenti al javascript che governa il funzionamento del login-registration form della navbar in versione mobile-->
-    <script defer src='Progetto/js/login.js'></script>
-    <script defer src='Progetto/js/responsiveNav.js'></script>
+    <script defer src='../js/login.js'></script>
+    <script defer src='../js/responsiveNav.js'></script>
 </body>
 
 </html>
