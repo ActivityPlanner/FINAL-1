@@ -1,11 +1,11 @@
 <?php 
-
-  //avviene la connessione con il database "my_activityplanner
+  
+  //effettua la connessione al db
   $conn = mysqli_connect("localhost","root","","my_activityplanner");
 
-  //verifica se la connesione è andata a buon fine
+  //verifica che la connessione non sia stata effettuata
   if(!$conn){
-      //se la verifica dovesse andare a fallire, allora verrà restituito un errore 
-      die("Connessione non avvenuta: " . mysqli_connect_error());	
+  	  //in casi affermativo viene restituito un messaggio di errore
+      die("Connection error: " . mysqli_connect_error());	
   }
 ?>
